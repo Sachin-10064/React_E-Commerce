@@ -38,9 +38,7 @@ export function Home() {
   }, []);
 
   useEffect(() => {
-
     if (selectedCategories.length > 0) {
-      console.log(selectedCategories);
       getProductByCategory(selectedCategories);
     } else {
       getAllProducts();
